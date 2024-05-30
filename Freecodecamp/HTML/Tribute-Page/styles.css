@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;    
+  }
+  
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    font-family: sans-serif;    
+}
+
+main {
+    background-color: rgba(56, 64, 77, 0.725);
+}
+
+.tributetitle {
+    text-align: center;
+    font-size: 50px;
+    rotate: 2.5deg;
+    background-color: rgba(56, 64, 77, 0.725);
+    filter: blur(1.5px);
+    border-radius: 40px 50px 35px 30px;
+    border: 5px solid white;
+}
+
+.tributetitle2 {
+    rotate: -2.5deg;
+}
+
+fieldset[id="spacer"] {
+    padding: 100px;
+    background-color: rgba(56, 64, 77, 0.725);
+    filter: blur(1.5px);
+    rotate: -2.5deg;
+    border-radius: 40px 50px 35px 30px;
+    border: 5px solid white;
+}
+
+.spacertitle1 {
+    text-align: center;
+    font-size: 30px;
+    rotate: 2.5deg;
+}
+
+.spacertitle2 {
+    text-algin: right;
+    font-size: 30px;
+    rotate: 2.5deg;
+}
+
+.img-div {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+
+.figcaption {
+    padding-top: 5px;
+    text-align: center;
+    font-style: italic;   
+}
+
+.image {
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 10px solid black;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.tribute-info {
+    border-radius: 40px 50px 35px 30px;
+    border: 10px solid white;
+    border-color: rgb(255, 255, 255);
+}
+
+.tributeinfo {
+    text-align: center;
+    font-size: 40px;
+}
+
+.tributeinfo2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: -10px;
+}
+
+.tributeinfo3 {
+    text-align: center;
+    padding-top: -10px;
+    font-size: 25px;
+}
+
+.development {
+    text-align: center;
+    font-size: 20px;
+}
+
+.P1 {
+    padding: 5px;
+    font-size: 18px;
+}

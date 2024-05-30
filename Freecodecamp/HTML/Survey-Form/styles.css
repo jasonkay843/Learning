@@ -1,0 +1,137 @@
+body {
+    background-color: #4c5c76;
+    color: #f5f6f7;
+    font-size: 18px;
+    font-family: comicsans;
+  }
+  div[id="body"] {
+    width: 100%;
+    min-width: 1000px;
+    height: 100%;
+  }
+  ::placeholder {
+    color: #ffffff;
+  }
+  head {
+    text-align: center;
+    border: 0;
+  }
+  
+  /* Survey Form Fieldset */
+  fieldset[id="title"] {
+    text-align: center;
+    border: 0;
+  }
+  h1[id="title"] {
+    font-size: 75px;
+    text-align: center;
+  }
+  p[id="description"] {
+    font-size: 20px;
+  }
+  
+  /* Info Fieldset */
+  fieldset[id="info"] {
+    text-align: center;
+    padding-bottom: 0.05em;
+    border: 0;
+    font-size: 20px;
+  } 
+  input[id="name"],input[id="number"],input[id="email"] {
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 1em auto;
+    background-color: #000000;
+    border: 2px solid #720000;
+  }
+  
+  /* Role Selector */
+  fieldset[id="role-selector"] {
+    text-align: center;
+    border: 0;
+    font-size: 18px;
+    padding-bottom: 0;
+  } 
+  select[id="rdropdown"] {
+    padding-top: 5px;
+    padding-left: 10px;
+    margin: 1em auto;
+    width: 50%;
+    text-align: center;
+    font-size: 18px;
+    background-color: #000000;
+    border: 2px solid #720000;
+    color: #818181;
+  } 
+  
+  /* Recommend */
+  p[id="recommendP"],p[id="recommend"] {
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 0.5;
+    font-size: 18px;
+  }
+  fieldset[id="recommend"] {
+    border: 0;
+  }
+  
+  
+  /* Columns & Rows Practice */
+  .column {
+    float: left;
+    width: 33.33%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  } 
+  p[id="improveP"] {
+    font-size: 20px;
+  }
+  input[id="improve-other12"] {
+    background-color: #000000;
+    border: 2px solid #720000;
+  }
+  fieldset[id="improvements"] {
+    text-align: center;
+    border: 0;
+  }
+  
+  /* Comment Fieldset */
+  fieldset[id="comments"] {
+    text-align: center;
+    border: 0;
+    }
+  p[id="commentP"] {
+    font-size: 20px;
+  }
+  textarea[id="commentT"] {
+    font-family: comicsans;
+    font-size: 16px;
+    width: 50%;
+    text-align: center;
+    padding-top: 50px;
+    background-color: #000000;
+    border: 2px solid #720000;
+  }
+  p, a[id="terms"] {
+    text-align: center;
+    font-size: 18px;
+  }
+  input[type="submit"] {
+    display: block;
+    width: 25%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 30px;
+    background-color: #000000;
+    border: 5px solid #720000;
+    min-width: 300px;
+  }

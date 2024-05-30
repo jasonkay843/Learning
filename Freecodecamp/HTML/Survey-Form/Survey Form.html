@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <h1 id="title">Survey Form</h1>
+  </head>
+
+  <!-- IDs/Names/For -- P=paragraph -- L=label--><!-- Grouped radios require same name to uncheck eachother-->
+
+  <body>
+    <form id="survey-form">
+    <div id="body" class="container">
+
+    <!-- Survey Form Fieldset -->
+
+      <fieldset id="title" name="Survey Form">
+        <p id="description">Please respond to the following.</p>
+        <form method="post" action='https://register-demo.freecodecamp.org'>
+      </fieldset>
+            
+    <!-- Info Fieldset -->
+      <fieldset id="info">     
+        <p id="ageP"><label id="number-label" for="age">Age: </label></p><input id="number" placeholder="Age" type="number" name="age" min="13" max="120" class="inline" required/>
+        <p id="nameP"><label id="name-label" for="name">Name: </label></p><input id="name" placeholder="Name" name="name" type="text" required/>
+        <p id="emailP"><label id="email-label" for="email">Email: </label></p><input id="email" name="email" placeholder="Email" type="email" required/>
+      </fieldset>
+
+    <!-- Role Selector -->
+      <fieldset id="role-selector">
+        <p id="roleP"><label id="roleL" for="role-select">What would you describe your current role as?</label></p>
+          <select id="dropdown" name="selector">
+            <option value="">Employed Full-time</option>
+            <option value="1">Employed Part-time</option>
+            <option value="2">Student</option>
+            <option value="3">Rather not say</option>
+            <option value="4">Other</option>
+          </select>
+      </fieldset>
+
+    <!-- Recommendation -->
+    <fieldset id="recommend">
+      <p id="recommendP"><label for="recommend">Would you recommend us to friends/family?</label></p>
+      <p id="recommend"><label for="recommend">Yes <input id="recommend" name="recommend-radio" value="1" class="inline" type="radio" checked></label></p>
+      <p id="recommend"><label for="recommend">No <input id="recommend" name="recommend-radio" value="2" class="inline" type="radio"></label></p>
+      <p id="recommend"><label for="recommend">Other <input id="recommend" name="recommend-radio" value="3" class="inline" type="radio"></label></p>
+      <p id="recommend"><label for="recommend">For Sure! <input id="recommend" name="recommend-radio" value="4" class="inline" type="radio"></label></p>
+    </fieldset>
+
+    <!-- Columns & Rows Practice-->
+    <fieldset id="improvements">
+      <p id="improveP"><label id="improveL" for="improvements">If you could improve anything, what would it be? (Select all that Apply)</label></p>
+      <div id="improvementDiv" class="row">
+        <div id="Improve-C1" class="column">
+          <p id="Improve-C11"><label for="improve-other">Front-end Projects <input id="improve-other1" value="1" type="checkbox" name="front"></label></p>
+          <p id="Improve-C12"><label for="improve-other">Back-end Projects <input id="improve-other2" value="2" type="checkbox" name="back"></label></p>
+          <p id="Improve-C13"><label for="improve-other">Data Visualization <input id="improve-other3" value="3" type="checkbox" name="data"></label></p>
+          <p id="Improve-C14"><label for="improve-other">Challenges <input id="improve-other4" value="4" type="checkbox" name="challenges"></label></p>
+        </div>          
+        <div id="Improve-C2" class="column">
+          <p id="Improve-C21"><label for="improve-other">Open Source Community <input id="improve-other5" value="5" type="checkbox" name="opensource"></label></p>
+          <p id="Improve-C22"><label for="improve-other">Gitter Help Rooms <input id="improve-other6" value="6" type="checkbox" name="gitter"></label></p>
+          <p id="Improve-C23"><label for="improve-other">Videos <input id="improve-other7" value="7" type="checkbox" name="videos"></label></p>
+          <p id="Improve-C24"><label for="improve-other">City Meetups <input id="improve-other8" value="8" type="checkbox" name="citymeet"></label></p>
+        </div>
+        <div id="Improve-C3" class="column">
+          <p id="Improve-C31"><label for="improve-other">Wiki <input id="improve-other9" type="checkbox" value="9" name="wiki"></label></p>
+          <p id="Improve-C32"><label for="improve-other">Forum <input id="improve-other10" type="checkbox" value="10" name="forum"></label></p>
+          <p id="Improve-C33"><label for="improve-other">Additional Courses <input id="improve-other11" value="11" type="checkbox" name="extra"></label></p>
+          <p id="Improve-C34"><label for="improve-other">Other: <input id="improve-other12" value="12" type="text" name="improve-other"></label></p>
+        </div>
+      </fieldset>
+
+
+    <!-- Comments or Suggestions -->    
+    <fieldset id="comments">
+      <p id="commentP"><label id="commentL" for="comment">Any other comments or suggestions welcome below</label></p>
+      <textarea id="commentT" name="comment" rows="5" cols="50" placeholder="Comments..."></textarea>
+    </fieldset>
+
+
+    <!-- Terms and Conditions -->
+    <label for="terms-and-conditions">
+      <p id="terms"><input class="inline" id="terms-and-conditions" value="13" type="checkbox" required name="terms-and-conditions" /> I accept the <a id="terms" href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a></label></p>
+      <input id="submit" type="submit" value="Submit"/>
+    </div>
+  </form>
+  </body>
+</html>
