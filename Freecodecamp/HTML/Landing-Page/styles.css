@@ -1,0 +1,163 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif; /* Consistent font throughout the page */
+}
+
+#header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 10px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+body {
+    padding-top: 100px; /* Space for fixed header */
+    background-color: #333; /* Background color for body */
+    text-align: center;
+}
+
+#nav-bar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+legend {
+    color: white;
+    text-align: center;
+}
+
+.nav-link a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+.nav-link a:hover {
+    background-color: #555;
+    font-style: italic;
+    border-bottom: solid 5px black;
+}
+
+#header-img {
+    height: 50px; /* Fixed height for logo */
+}
+
+main {
+    max-width: 600px; /* Limiting width of the main content */
+    margin: 150px auto 50px; /* Margin to position the form */
+    padding: 10px;
+    background: #333;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: -5px; /* Increased margin between form groups */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+    
+}
+
+input[type="text"]  {
+    width: calc(100% - 16px); /* Adjusted width to accommodate for padding */
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    background-color: #000000;
+    
+}
+
+input[type="email"]  {
+    width: calc(100% - 16px); /* Adjusted width to accommodate for padding */
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    background-color: #000000;
+    
+}
+
+/* Remove this display: none; to reveal other form examples */
+.hidden {
+    display: none;
+}
+
+input::placeholder {
+    text-align: center;
+}
+
+input[type="password"]  {
+    width: calc(100% - 16px); /* Adjusted width to accommodate for padding */
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    background-color: #000000;
+    
+}
+
+select  {
+    width: calc(100% - 16px); /* Adjusted width to accommodate for padding */
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    background-color: #000000;
+    
+}
+
+textarea {
+    width: calc(100% - 16px); /* Adjusted width to accommodate for padding */
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    background-color: #000000;
+    
+}
+
+.submit-button {
+    background-color: #5ca4a9;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.submit-button:hover {
+    background-color: #469187;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Add your CSS styles here */
+@media screen and (max-width: 600px) {
+    /* Example of a media query */
+    body {
+        background-color: lightblue;
+    }
+}
